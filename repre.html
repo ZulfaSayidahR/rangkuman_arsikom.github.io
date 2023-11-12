@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangkuman Arsikom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(194, 199, 199);
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 15px;
+            background-image: none;
+        }
+
+        nav {
+            margin: 10px 0;
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Menambahkan dropdown style */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            margin: 10px 0;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 15px;
+        }
+        .image-box {
+            width: 100%;
+        }
+        .image-box img {
+            text-align: center;
+            width: 30%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif;"><b>REPRESENTASI DATA
+            PADA KOMPUTER</b></h1>
+    </header>
+
+    <nav>
+        <a href="index.html"><img src="hm2.png" height="30px" width="30px" style="vertical-align: middle;">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Materi<img src="dp.png" height="30px" width="30px" style="vertical-align: middle;">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="cpu.html">CPU</a>
+                <a href="gate.html">GATE</a>
+                <a href="memory.html">Memory</a>
+                <a href="repre.html">Representasi Data</a>
+                <a href="dasar.html">Dasar Pemrograman Komputer</a>
+                <a href="com.html">Compiler, Interpreter, Linker</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <div class="image-box" style="text-align: center;">
+            <img src="G3.jpg" width="20%" height="20%">
+             </div>
+            <h2><b><i>DATA</i></b></h2>
+            <p>Data adalah fakta-fakta, angka, informasi,
+                atau rekaman yang digunakan sebagai
+                dasar untuk pengambilan keputusan,
+                analisis, penelitian, atau tujuan lainnya.</p>
+            <h2><b><i>DATA NUMERIK</i></b></h2>
+            <P>Data Numerik yaitu data
+                yang berupa angka maupun bilangan, bisa
+                dalam bentuk integer, float dan lainnya</P>
+        </article>
+        <table>
+            <tr>
+                <!-- <th>Jenis Data</th> -->
+                <th>Nama Data</th>
+                <th style="text-align: center;">Penjelasan</th>
+            </tr>
+            <tr>
+                <!-- <td>Numerik</td> -->
+                <td>Sistem Desimal</td>
+                <td><p>Sistem desimal merupakan sistem bilangan yang digunakan sehari-hari.
+                    Desimal terdiri dari angka 0,1,2,3,4,5,6,7,8,9.</p></td>
+            </tr>
+            <tr>
+                <td>Sistem Biner</td>
+                <td><p>Sistem biner adlah system bilangan yang terdiri dari angka 0 dan 1.</p></td>
+            </tr>
+            <tr>
+                <td>Integers</td>
+                <td><p>Integers atau bilangan bulat merupakan bilangan yang terdiri dari
+                    nilai positif, negatif dan bukan berupa pecahan/desimal.</p></td>
+            </tr>
+            <tr>
+                <td>Bilangan Real</td>
+                <td><p><i>Bilangan real</i> adalah bilangan yang terdapat pecahan atau desimal.
+                    Contoh dari bilangan real adalah 3.14, -0.05, dan sebagainya. Pada
+                    bahasa pemrograman bilang real di notasikan sebagai float dan
+                    double</p></td>
+            </tr>
+            <tr>
+                <td>Bilangan Cacah</td>
+                <td><p>Bilangan cacah adalah bilang bulat tanpa nilai negatif.</p></td>
+            </tr>
+        </table>
+        <h2><b><i>DATA NON-NUMERIK</i></b></h2>
+        <ul type="square">
+            <li><b>Text</b></li>
+            <p>data teks pada komputer mengacu pada cara teks atau informasi berbasis teks direpresentasikan, disimpan,
+                dan dikelola dalam sistem komputer. Representasi ini mencakup cara karakter, kata, kalimat, dan dokumen
+                dalam bentuk teks direpresentasikan dalam format biner yang dapat dipahami dan diolah oleh
+                komputer</p>
+            <li><b>Image</b></li>
+            <p>Representasi Citra Digital → semua gambar yang bisa disimpan/diolah pada komputer/piranti digital
+                disebut dengan citra digital (atau sering disebut citra saja).</p>
+    </main>
+
+    <footer>
+        <p>&copy; By @ZulfaSayidahR.</p>
+    </footer>
+
+</body>
+</html>
